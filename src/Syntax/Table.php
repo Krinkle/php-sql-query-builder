@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues\Sql\QueryBuilder\Syntax;
+namespace Krinkle\Sql\QueryBuilder\Syntax;
 
 /**
  * Class Table.

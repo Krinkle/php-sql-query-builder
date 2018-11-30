@@ -8,9 +8,9 @@
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues\Sql\QueryBuilder\Syntax;
+namespace Krinkle\Sql\QueryBuilder\Syntax;
 
-use NilPortugues\Sql\QueryBuilder\Manipulation\QueryException;
+use Krinkle\Sql\QueryBuilder\Manipulation\QueryException;
 
 /**
  * Class Column.

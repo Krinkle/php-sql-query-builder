@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues\Tests\Sql\QueryBuilder\Manipulation;
+namespace Krinkle\Tests\Sql\QueryBuilder\Manipulation;
 
 /**
  * Class BaseQueryTest.
@@ -16,14 +16,14 @@ namespace NilPortugues\Tests\Sql\QueryBuilder\Manipulation;
 class BaseQueryTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @var \NilPortugues\Tests\Sql\QueryBuilder\Manipulation\Resources\DummyQuery
+     * @var \Krinkle\Tests\Sql\QueryBuilder\Manipulation\Resources\DummyQuery
      */
     private $query;
 
     /**
      * @var string
      */
-    private $whereClass = '\NilPortugues\Sql\QueryBuilder\Syntax\Where';
+    private $whereClass = '\Krinkle\Sql\QueryBuilder\Syntax\Where';
 
     /**
      *

@@ -8,11 +8,11 @@
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues\Sql\QueryBuilder\Manipulation;
+namespace Krinkle\Sql\QueryBuilder\Manipulation;
 
-use NilPortugues\Sql\QueryBuilder\Syntax\Where;
-use NilPortugues\Sql\QueryBuilder\Syntax\Column;
-use NilPortugues\Sql\QueryBuilder\Syntax\SyntaxFactory;
+use Krinkle\Sql\QueryBuilder\Syntax\Where;
+use Krinkle\Sql\QueryBuilder\Syntax\Column;
+use Krinkle\Sql\QueryBuilder\Syntax\SyntaxFactory;
 
 /**
  * Class JoinQuery.
@@ -233,7 +233,7 @@ class JoinQuery
     }
 
     /**
-     * @return \NilPortugues\Sql\QueryBuilder\Syntax\Where
+     * @return \Krinkle\Sql\QueryBuilder\Syntax\Where
      */
     public function getJoinCondition()
     {
@@ -241,7 +241,7 @@ class JoinQuery
     }
 
     /**
-     * @param \NilPortugues\Sql\QueryBuilder\Syntax\Where $joinCondition
+     * @param \Krinkle\Sql\QueryBuilder\Syntax\Where $joinCondition
      *
      * @return $this
      */

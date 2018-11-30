@@ -8,9 +8,9 @@
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues\Tests\Sql\QueryBuilder\Manipulation;
+namespace Krinkle\Tests\Sql\QueryBuilder\Manipulation;
 
-use NilPortugues\Sql\QueryBuilder\Manipulation\Insert;
+use Krinkle\Sql\QueryBuilder\Manipulation\Insert;
 
 /**
  * Class InsertTest.
@@ -60,6 +60,6 @@ class InsertTest extends \PHPUnit_Framework_TestCase
 
         $columns = $this->query->getColumns();
 
-        $this->assertInstanceOf('NilPortugues\Sql\QueryBuilder\Syntax\Column', $columns[0]);
+        $this->assertInstanceOf('Krinkle\Sql\QueryBuilder\Syntax\Column', $columns[0]);
     }
 }

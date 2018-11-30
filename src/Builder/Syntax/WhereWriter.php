@@ -1,11 +1,11 @@
 <?php
 
-namespace NilPortugues\Sql\QueryBuilder\Builder\Syntax;
+namespace Krinkle\Sql\QueryBuilder\Builder\Syntax;
 
-use NilPortugues\Sql\QueryBuilder\Manipulation\Select;
-use NilPortugues\Sql\QueryBuilder\Syntax\Column;
-use NilPortugues\Sql\QueryBuilder\Syntax\SyntaxFactory;
-use NilPortugues\Sql\QueryBuilder\Syntax\Where;
+use Krinkle\Sql\QueryBuilder\Manipulation\Select;
+use Krinkle\Sql\QueryBuilder\Syntax\Column;
+use Krinkle\Sql\QueryBuilder\Syntax\SyntaxFactory;
+use Krinkle\Sql\QueryBuilder\Syntax\Where;
 
 /**
  * Class WhereWriter.

@@ -8,10 +8,10 @@
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues\Tests\Sql\QueryBuilder\Manipulation;
+namespace Krinkle\Tests\Sql\QueryBuilder\Manipulation;
 
-use NilPortugues\Sql\QueryBuilder\Manipulation\Intersect;
-use NilPortugues\Sql\QueryBuilder\Manipulation\Select;
+use Krinkle\Sql\QueryBuilder\Manipulation\Intersect;
+use Krinkle\Sql\QueryBuilder\Manipulation\Select;
 
 /**
  * Class IntersectTest.
@@ -26,7 +26,7 @@ class IntersectTest extends \PHPUnit_Framework_TestCase
     /**
      * @var string
      */
-    private $exceptionClass = '\NilPortugues\Sql\QueryBuilder\Manipulation\QueryException';
+    private $exceptionClass = '\Krinkle\Sql\QueryBuilder\Manipulation\QueryException';
 
     /**
      *

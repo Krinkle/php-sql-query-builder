@@ -8,11 +8,11 @@
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues\Sql\QueryBuilder\Builder\Syntax;
+namespace Krinkle\Sql\QueryBuilder\Builder\Syntax;
 
-use NilPortugues\Sql\QueryBuilder\Builder\GenericBuilder;
-use NilPortugues\Sql\QueryBuilder\Manipulation\Insert;
-use NilPortugues\Sql\QueryBuilder\Manipulation\QueryException;
+use Krinkle\Sql\QueryBuilder\Builder\GenericBuilder;
+use Krinkle\Sql\QueryBuilder\Manipulation\Insert;
+use Krinkle\Sql\QueryBuilder\Manipulation\QueryException;
 
 /**
  * Class InsertWriter.

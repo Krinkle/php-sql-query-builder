@@ -8,9 +8,9 @@
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues\Tests\Sql\QueryBuilder\Manipulation\Resources;
+namespace Krinkle\Tests\Sql\QueryBuilder\Manipulation\Resources;
 
-use NilPortugues\Sql\QueryBuilder\Manipulation\AbstractBaseQuery;
+use Krinkle\Sql\QueryBuilder\Manipulation\AbstractBaseQuery;
 
 /**
  * Class DummyQuery.

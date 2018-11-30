@@ -8,10 +8,10 @@
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues\Sql\QueryBuilder\Builder;
+namespace Krinkle\Sql\QueryBuilder\Builder;
 
-use NilPortugues\Sql\QueryBuilder\Syntax\Column;
-use NilPortugues\Sql\QueryBuilder\Syntax\Table;
+use Krinkle\Sql\QueryBuilder\Syntax\Column;
+use Krinkle\Sql\QueryBuilder\Syntax\Table;
 
 /**
  * Class MySqlBuilder.

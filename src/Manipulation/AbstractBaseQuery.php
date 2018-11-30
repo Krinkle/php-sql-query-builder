@@ -8,15 +8,15 @@
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues\Sql\QueryBuilder\Manipulation;
+namespace Krinkle\Sql\QueryBuilder\Manipulation;
 
-use NilPortugues\Sql\QueryBuilder\Syntax\OrderBy;
-use NilPortugues\Sql\QueryBuilder\Syntax\QueryPartInterface;
-use NilPortugues\Sql\QueryBuilder\Syntax\SyntaxFactory;
-use NilPortugues\Sql\QueryBuilder\Syntax\Table;
-use NilPortugues\Sql\QueryBuilder\Syntax\Where;
+use Krinkle\Sql\QueryBuilder\Syntax\OrderBy;
+use Krinkle\Sql\QueryBuilder\Syntax\QueryPartInterface;
+use Krinkle\Sql\QueryBuilder\Syntax\SyntaxFactory;
+use Krinkle\Sql\QueryBuilder\Syntax\Table;
+use Krinkle\Sql\QueryBuilder\Syntax\Where;
 // Builder injects itself into query for convestion to SQL string.
-use NilPortugues\Sql\QueryBuilder\Builder\BuilderInterface;
+use Krinkle\Sql\QueryBuilder\Builder\BuilderInterface;
 
 /**
  * Class AbstractBaseQuery.
@@ -29,7 +29,7 @@ abstract class AbstractBaseQuery implements QueryInterface, QueryPartInterface
     protected $comment = '';
 
     /**
-     * @var \NilPortugues\Sql\QueryBuilder\Builder\BuilderInterface
+     * @var \Krinkle\Sql\QueryBuilder\Builder\BuilderInterface
      */
     protected $builder;
 

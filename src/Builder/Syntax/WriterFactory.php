@@ -8,9 +8,9 @@
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues\Sql\QueryBuilder\Builder\Syntax;
+namespace Krinkle\Sql\QueryBuilder\Builder\Syntax;
 
-use NilPortugues\Sql\QueryBuilder\Builder\GenericBuilder;
+use Krinkle\Sql\QueryBuilder\Builder\GenericBuilder;
 
 /**
  * Class WriterFactory.

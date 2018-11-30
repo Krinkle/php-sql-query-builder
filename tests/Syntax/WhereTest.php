@@ -8,11 +8,11 @@
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues\Tests\Sql\QueryBuilder\Syntax;
+namespace Krinkle\Tests\Sql\QueryBuilder\Syntax;
 
-use NilPortugues\Sql\QueryBuilder\Manipulation\Select;
-use NilPortugues\Sql\QueryBuilder\Syntax\Where;
-use NilPortugues\Tests\Sql\QueryBuilder\Manipulation\Resources\DummyQuery;
+use Krinkle\Sql\QueryBuilder\Manipulation\Select;
+use Krinkle\Sql\QueryBuilder\Syntax\Where;
+use Krinkle\Tests\Sql\QueryBuilder\Manipulation\Resources\DummyQuery;
 
 /**
  * Class WhereTest.
@@ -27,17 +27,17 @@ class WhereTest extends \PHPUnit_Framework_TestCase
     /**
      * @var string
      */
-    protected $whereClass = '\NilPortugues\Sql\QueryBuilder\Syntax\Where';
+    protected $whereClass = '\Krinkle\Sql\QueryBuilder\Syntax\Where';
 
     /**
      * @var string
      */
-    protected $columnClass = '\NilPortugues\Sql\QueryBuilder\Syntax\Column';
+    protected $columnClass = '\Krinkle\Sql\QueryBuilder\Syntax\Column';
 
     /**
      * @var string
      */
-    protected $queryException = '\NilPortugues\Sql\QueryBuilder\Manipulation\QueryException';
+    protected $queryException = '\Krinkle\Sql\QueryBuilder\Manipulation\QueryException';
 
     /**
      *

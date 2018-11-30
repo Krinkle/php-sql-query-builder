@@ -8,10 +8,10 @@
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues\Tests\Sql\QueryBuilder\Builder\Syntax;
+namespace Krinkle\Tests\Sql\QueryBuilder\Builder\Syntax;
 
-use NilPortugues\Sql\QueryBuilder\Builder\GenericBuilder;
-use NilPortugues\Sql\QueryBuilder\Manipulation\Insert;
+use Krinkle\Sql\QueryBuilder\Builder\GenericBuilder;
+use Krinkle\Sql\QueryBuilder\Manipulation\Insert;
 
 /**
  * Class InsertWriterTest.
@@ -31,7 +31,7 @@ class InsertWriterTest extends \PHPUnit_Framework_TestCase
     /**
      * @var string
      */
-    private $exceptionClass = '\NilPortugues\Sql\QueryBuilder\Manipulation\QueryException';
+    private $exceptionClass = '\Krinkle\Sql\QueryBuilder\Manipulation\QueryException';
 
     /**
      *

@@ -8,13 +8,13 @@
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues\Sql\QueryBuilder\Builder\Syntax;
+namespace Krinkle\Sql\QueryBuilder\Builder\Syntax;
 
-use NilPortugues\Sql\QueryBuilder\Builder\GenericBuilder;
-use NilPortugues\Sql\QueryBuilder\Manipulation\Select;
-use NilPortugues\Sql\QueryBuilder\Syntax\Column;
-use NilPortugues\Sql\QueryBuilder\Syntax\OrderBy;
-use NilPortugues\Sql\QueryBuilder\Syntax\SyntaxFactory;
+use Krinkle\Sql\QueryBuilder\Builder\GenericBuilder;
+use Krinkle\Sql\QueryBuilder\Manipulation\Select;
+use Krinkle\Sql\QueryBuilder\Syntax\Column;
+use Krinkle\Sql\QueryBuilder\Syntax\OrderBy;
+use Krinkle\Sql\QueryBuilder\Syntax\SyntaxFactory;
 
 /**
  * Class SelectWriter.

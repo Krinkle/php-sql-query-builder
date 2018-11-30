@@ -8,10 +8,10 @@
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues\Tests\Sql\QueryBuilder\Manipulation;
+namespace Krinkle\Tests\Sql\QueryBuilder\Manipulation;
 
-use NilPortugues\Sql\QueryBuilder\Manipulation\Select;
-use NilPortugues\Sql\QueryBuilder\Syntax\OrderBy;
+use Krinkle\Sql\QueryBuilder\Manipulation\Select;
+use Krinkle\Sql\QueryBuilder\Syntax\OrderBy;
 
 /**
  * Class SelectTest.

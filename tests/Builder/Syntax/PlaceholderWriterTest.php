@@ -8,9 +8,9 @@
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues\Tests\Sql\QueryBuilder\Builder\Syntax;
+namespace Krinkle\Tests\Sql\QueryBuilder\Builder\Syntax;
 
-use NilPortugues\Sql\QueryBuilder\Builder\Syntax\PlaceholderWriter;
+use Krinkle\Sql\QueryBuilder\Builder\Syntax\PlaceholderWriter;
 
 /**
  * Class PlaceholderWriterTest.

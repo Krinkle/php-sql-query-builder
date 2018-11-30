@@ -8,13 +8,13 @@
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues\Tests\Sql\QueryBuilder\Builder\Syntax;
+namespace Krinkle\Tests\Sql\QueryBuilder\Builder\Syntax;
 
-use NilPortugues\Sql\QueryBuilder\Builder\GenericBuilder;
-use NilPortugues\Sql\QueryBuilder\Builder\Syntax\ColumnWriter;
-use NilPortugues\Sql\QueryBuilder\Builder\Syntax\PlaceholderWriter;
-use NilPortugues\Sql\QueryBuilder\Manipulation\Select;
-use NilPortugues\Sql\QueryBuilder\Syntax\Column;
+use Krinkle\Sql\QueryBuilder\Builder\GenericBuilder;
+use Krinkle\Sql\QueryBuilder\Builder\Syntax\ColumnWriter;
+use Krinkle\Sql\QueryBuilder\Builder\Syntax\PlaceholderWriter;
+use Krinkle\Sql\QueryBuilder\Manipulation\Select;
+use Krinkle\Sql\QueryBuilder\Syntax\Column;
 
 /**
  * Class ColumnWriterTest.
@@ -68,7 +68,7 @@ class ColumnWriterTest extends \PHPUnit_Framework_TestCase
 
         $result = $this->columnWriter->writeValueAsColumns($select);
 
-        $this->assertInstanceOf('NilPortugues\Sql\QueryBuilder\Syntax\Column', $result[0]);
+        $this->assertInstanceOf('Krinkle\Sql\QueryBuilder\Syntax\Column', $result[0]);
     }
 
     /**
@@ -81,7 +81,7 @@ class ColumnWriterTest extends \PHPUnit_Framework_TestCase
 
         $result = $this->columnWriter->writeFuncAsColumns($select);
 
-        $this->assertInstanceOf('NilPortugues\Sql\QueryBuilder\Syntax\Column', $result[0]);
+        $this->assertInstanceOf('Krinkle\Sql\QueryBuilder\Syntax\Column', $result[0]);
     }
 
     /**

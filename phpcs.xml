@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<ruleset>
+	<rule ref="PSR2">
+		<!-- WhereTest.php -->
+		<exclude name="PSR1.Methods.CamelCapsMethodName.NotCamelCaps" />
+		<!-- AbstractCreationalQuery -->
+		<exclude name="Squiz.Functions.MultiLineFunctionDeclaration.SpaceAfterFunction" />
+		<!-- Where.php -->
+		<exclude name="PSR2.Methods.FunctionCallSignature.Indent" />
+		<!-- Where.php -->
+		<exclude name="Generic.WhiteSpace.ScopeIndent.Incorrect" />
+		<!-- SyntaxFactory.php -->
+		<exclude name="PSR2.ControlStructures.ElseIfDeclaration.NotAllowed" />
+	</rule>
+	<file>.</file>
+	<arg name="encoding" value="UTF-8"/>
+	<arg name="extensions" value="php"/>
+	<exclude-pattern>/build</exclude-pattern>
+	<exclude-pattern>/vendor</exclude-pattern>
+</ruleset>

@@ -8,10 +8,10 @@
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues\Tests\Sql\QueryBuilder\Syntax;
+namespace Krinkle\Tests\Sql\QueryBuilder\Syntax;
 
-use NilPortugues\Sql\QueryBuilder\Syntax\Column;
-use NilPortugues\Sql\QueryBuilder\Syntax\OrderBy;
+use Krinkle\Sql\QueryBuilder\Syntax\Column;
+use Krinkle\Sql\QueryBuilder\Syntax\OrderBy;
 
 /**
  * Class OrderByTest.
@@ -21,7 +21,7 @@ class OrderByTest extends \PHPUnit_Framework_TestCase
     /**
      * @var string
      */
-    protected $columnClass = '\NilPortugues\Sql\QueryBuilder\Syntax\Column';
+    protected $columnClass = '\Krinkle\Sql\QueryBuilder\Syntax\Column';
 
     /**
      * @test

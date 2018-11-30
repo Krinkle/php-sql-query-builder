@@ -8,10 +8,10 @@
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues\Tests\Sql\QueryBuilder\Builder;
+namespace Krinkle\Tests\Sql\QueryBuilder\Builder;
 
-use NilPortugues\Sql\QueryBuilder\Builder\MySqlBuilder;
-use NilPortugues\Sql\QueryBuilder\Manipulation\Select;
+use Krinkle\Sql\QueryBuilder\Builder\MySqlBuilder;
+use Krinkle\Sql\QueryBuilder\Manipulation\Select;
 
 /**
  * Class MySqlBuilderTest.

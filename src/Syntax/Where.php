@@ -8,12 +8,12 @@
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues\Sql\QueryBuilder\Syntax;
+namespace Krinkle\Sql\QueryBuilder\Syntax;
 
-use NilPortugues\Sql\QueryBuilder\Manipulation\QueryException;
-use NilPortugues\Sql\QueryBuilder\Manipulation\QueryFactory;
-use NilPortugues\Sql\QueryBuilder\Manipulation\QueryInterface;
-use NilPortugues\Sql\QueryBuilder\Manipulation\Select;
+use Krinkle\Sql\QueryBuilder\Manipulation\QueryException;
+use Krinkle\Sql\QueryBuilder\Manipulation\QueryFactory;
+use Krinkle\Sql\QueryBuilder\Manipulation\QueryInterface;
+use Krinkle\Sql\QueryBuilder\Manipulation\Select;
 
 /**
  * Class Where.

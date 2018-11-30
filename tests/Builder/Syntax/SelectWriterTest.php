@@ -8,12 +8,12 @@
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues\Tests\Sql\QueryBuilder\Builder\Syntax;
+namespace Krinkle\Tests\Sql\QueryBuilder\Builder\Syntax;
 
-use NilPortugues\Sql\QueryBuilder\Syntax\Column;
-use NilPortugues\Sql\QueryBuilder\Syntax\OrderBy;
-use NilPortugues\Sql\QueryBuilder\Manipulation\Select;
-use NilPortugues\Sql\QueryBuilder\Builder\GenericBuilder;
+use Krinkle\Sql\QueryBuilder\Syntax\Column;
+use Krinkle\Sql\QueryBuilder\Syntax\OrderBy;
+use Krinkle\Sql\QueryBuilder\Manipulation\Select;
+use Krinkle\Sql\QueryBuilder\Builder\GenericBuilder;
 
 /**
  * Class SelectWriterTest.
@@ -33,7 +33,7 @@ class SelectWriterTest extends \PHPUnit_Framework_TestCase
     /**
      * @var string
      */
-    private $exceptionClass = '\NilPortugues\Sql\QueryBuilder\Manipulation\QueryException';
+    private $exceptionClass = '\Krinkle\Sql\QueryBuilder\Manipulation\QueryException';
 
     /**
      *

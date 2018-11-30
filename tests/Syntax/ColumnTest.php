@@ -8,10 +8,10 @@
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues\Tests\Sql\QueryBuilder\Syntax;
+namespace Krinkle\Tests\Sql\QueryBuilder\Syntax;
 
-use NilPortugues\Sql\QueryBuilder\Syntax\Column;
-use NilPortugues\Sql\QueryBuilder\Syntax\Table;
+use Krinkle\Sql\QueryBuilder\Syntax\Column;
+use Krinkle\Sql\QueryBuilder\Syntax\Table;
 
 /**
  * Class ColumnTest.
@@ -21,12 +21,12 @@ class ColumnTest extends \PHPUnit_Framework_TestCase
     /**
      * @var string
      */
-    protected $tableClass = '\NilPortugues\Sql\QueryBuilder\Syntax\Table';
+    protected $tableClass = '\Krinkle\Sql\QueryBuilder\Syntax\Table';
 
     /**
      * @var string
      */
-    protected $queryException = '\NilPortugues\Sql\QueryBuilder\Manipulation\QueryException';
+    protected $queryException = '\Krinkle\Sql\QueryBuilder\Manipulation\QueryException';
 
     /**
      * @test

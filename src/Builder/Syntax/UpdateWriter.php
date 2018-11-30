@@ -8,11 +8,11 @@
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues\Sql\QueryBuilder\Builder\Syntax;
+namespace Krinkle\Sql\QueryBuilder\Builder\Syntax;
 
-use NilPortugues\Sql\QueryBuilder\Manipulation\QueryException;
-use NilPortugues\Sql\QueryBuilder\Manipulation\Update;
-use NilPortugues\Sql\QueryBuilder\Syntax\SyntaxFactory;
+use Krinkle\Sql\QueryBuilder\Manipulation\QueryException;
+use Krinkle\Sql\QueryBuilder\Manipulation\Update;
+use Krinkle\Sql\QueryBuilder\Syntax\SyntaxFactory;
 
 /**
  * Class UpdateWriter.

@@ -8,9 +8,9 @@
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues\Tests\Sql\QueryBuilder\Syntax;
+namespace Krinkle\Tests\Sql\QueryBuilder\Syntax;
 
-use NilPortugues\Sql\QueryBuilder\Syntax\Table;
+use Krinkle\Sql\QueryBuilder\Syntax\Table;
 
 /**
  * Class TableTest.

@@ -8,12 +8,12 @@
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues\Tests\Sql\QueryBuilder\Builder\Syntax;
+namespace Krinkle\Tests\Sql\QueryBuilder\Builder\Syntax;
 
-use NilPortugues\Sql\QueryBuilder\Builder\GenericBuilder;
-use NilPortugues\Sql\QueryBuilder\Builder\Syntax\MinusWriter;
-use NilPortugues\Sql\QueryBuilder\Manipulation\Minus;
-use NilPortugues\Sql\QueryBuilder\Manipulation\Select;
+use Krinkle\Sql\QueryBuilder\Builder\GenericBuilder;
+use Krinkle\Sql\QueryBuilder\Builder\Syntax\MinusWriter;
+use Krinkle\Sql\QueryBuilder\Manipulation\Minus;
+use Krinkle\Sql\QueryBuilder\Manipulation\Select;
 
 /**
  * Class MinusWriterTest.

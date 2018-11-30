@@ -8,10 +8,10 @@
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues\Tests\Sql\QueryBuilder\Manipulation;
+namespace Krinkle\Tests\Sql\QueryBuilder\Manipulation;
 
-use NilPortugues\Sql\QueryBuilder\Manipulation\UnionAll;
-use NilPortugues\Sql\QueryBuilder\Manipulation\Select;
+use Krinkle\Sql\QueryBuilder\Manipulation\UnionAll;
+use Krinkle\Sql\QueryBuilder\Manipulation\Select;
 
 /**
  * Class UnionAllTest.
@@ -26,7 +26,7 @@ class UnionAllTest extends \PHPUnit_Framework_TestCase
     /**
      * @var string
      */
-    private $exceptionClass = '\NilPortugues\Sql\QueryBuilder\Manipulation\QueryException';
+    private $exceptionClass = '\Krinkle\Sql\QueryBuilder\Manipulation\QueryException';
 
     /**
      *

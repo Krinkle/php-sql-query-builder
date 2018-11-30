@@ -8,11 +8,11 @@
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues\Sql\QueryBuilder\Manipulation;
+namespace Krinkle\Sql\QueryBuilder\Manipulation;
 
-use NilPortugues\Sql\QueryBuilder\Syntax\Column;
-use NilPortugues\Sql\QueryBuilder\Syntax\OrderBy;
-use NilPortugues\Sql\QueryBuilder\Syntax\SyntaxFactory;
+use Krinkle\Sql\QueryBuilder\Syntax\Column;
+use Krinkle\Sql\QueryBuilder\Syntax\OrderBy;
+use Krinkle\Sql\QueryBuilder\Syntax\SyntaxFactory;
 
 /**
  * Class ColumnQuery.
@@ -87,7 +87,7 @@ class ColumnQuery
     /**
      * @param string $whereOperator
      *
-     * @return \NilPortugues\Sql\QueryBuilder\Syntax\Where
+     * @return \Krinkle\Sql\QueryBuilder\Syntax\Where
      */
     public function where($whereOperator = 'AND')
     {
@@ -233,7 +233,7 @@ class ColumnQuery
     }
 
     /**
-     * @return \NilPortugues\Sql\QueryBuilder\Syntax\Column
+     * @return \Krinkle\Sql\QueryBuilder\Syntax\Column
      *
      * @throws QueryException
      */

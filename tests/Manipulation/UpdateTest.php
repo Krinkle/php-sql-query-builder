@@ -8,9 +8,9 @@
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues\Tests\Sql\QueryBuilder\Manipulation;
+namespace Krinkle\Tests\Sql\QueryBuilder\Manipulation;
 
-use NilPortugues\Sql\QueryBuilder\Manipulation\Update;
+use Krinkle\Sql\QueryBuilder\Manipulation\Update;
 
 /**
  * Class UpdateTest.

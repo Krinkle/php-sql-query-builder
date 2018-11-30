@@ -72,7 +72,7 @@ The Generic Query Builder is the default builder for this class and writes stand
 #### Usage:
 ```php
 <?php
-use NilPortugues\Sql\QueryBuilder\Builder\GenericBuilder;
+use Krinkle\Sql\QueryBuilder\Builder\GenericBuilder;
 
 $builder = new GenericBuilder(); 
 
@@ -94,7 +94,7 @@ The MySQL Query Builder has its own class, that inherits from the SQL-2003 build
 #### Usage:
 ```php
 <?php
-use NilPortugues\Sql\QueryBuilder\Builder\MySqlBuilder;
+use Krinkle\Sql\QueryBuilder\Builder\MySqlBuilder;
 
 $builder = new MySqlBuilder(); 
 
@@ -119,7 +119,7 @@ Keep in mind `writeFormatted` is to be avoided at all cost in production mode as
 #### Usage:
 ```php
 <?php
-use NilPortugues\Sql\QueryBuilder\Builder\GenericBuilder;
+use Krinkle\Sql\QueryBuilder\Builder\GenericBuilder;
 
 $builder = new GenericBuilder(); 
 
@@ -152,7 +152,7 @@ More complicated examples can be found in the documentation.
 #### Usage:
 ```php
 <?php
-use NilPortugues\Sql\QueryBuilder\Builder\GenericBuilder;
+use Krinkle\Sql\QueryBuilder\Builder\GenericBuilder;
 
 $builder = new GenericBuilder(); 
 
@@ -173,7 +173,7 @@ SELECT user.user_id, user.name, user.email FROM user
 #### Usage:
 ```php
 <?php
-use NilPortugues\Sql\QueryBuilder\Builder\GenericBuilder;
+use Krinkle\Sql\QueryBuilder\Builder\GenericBuilder;
 
 $builder = new GenericBuilder(); 
 
@@ -195,7 +195,7 @@ Default logical operator for filtering using `WHERE` conditions is `AND`.
 #### Usage:
 ```php
 <?php
-use NilPortugues\Sql\QueryBuilder\Builder\GenericBuilder;
+use Krinkle\Sql\QueryBuilder\Builder\GenericBuilder;
 
 $builder = new GenericBuilder(); 
 
@@ -232,7 +232,7 @@ WHERE
 #### Usage:
 ```php
 <?php
-use NilPortugues\Sql\QueryBuilder\Builder\GenericBuilder;
+use Krinkle\Sql\QueryBuilder\Builder\GenericBuilder;
 
 $builder = new GenericBuilder(); 
 
@@ -274,7 +274,7 @@ Here's an example selecting both table and joined table columns and doing sortin
 #### Usage:
 ```php
 <?php
-use NilPortugues\Sql\QueryBuilder\Builder\GenericBuilder;
+use Krinkle\Sql\QueryBuilder\Builder\GenericBuilder;
 
 $builder = new GenericBuilder(); 
 
@@ -341,7 +341,7 @@ Counting rows comes in 3 possible ways, using the ALL selector `*`, stating a co
 #### Usage:
 ```php
 <?php
-use NilPortugues\Sql\QueryBuilder\Builder\GenericBuilder;
+use Krinkle\Sql\QueryBuilder\Builder\GenericBuilder;
 
 $builder = new GenericBuilder(); 
 
@@ -361,7 +361,7 @@ SELECT COUNT(*) FROM user;
 #### Usage:
 ```php
 <?php
-use NilPortugues\Sql\QueryBuilder\Builder\GenericBuilder;
+use Krinkle\Sql\QueryBuilder\Builder\GenericBuilder;
 
 $builder = new GenericBuilder(); 
 
@@ -381,7 +381,7 @@ SELECT COUNT(user.user_id) FROM user;
 #### Usage:
 ```php
 <?php
-use NilPortugues\Sql\QueryBuilder\Builder\GenericBuilder;
+use Krinkle\Sql\QueryBuilder\Builder\GenericBuilder;
 
 $builder = new GenericBuilder(); 
 
@@ -408,7 +408,7 @@ The `INSERT` statement is really straightforward.
 #### Usage:
 ```php
 <?php
-use NilPortugues\Sql\QueryBuilder\Builder\GenericBuilder;
+use Krinkle\Sql\QueryBuilder\Builder\GenericBuilder;
 
 $builder = new GenericBuilder(); 
 
@@ -447,7 +447,7 @@ Important including the the `where` statement is critical, or all table rows wil
 #### Usage:
 ```php
 <?php
-use NilPortugues\Sql\QueryBuilder\Builder\GenericBuilder;
+use Krinkle\Sql\QueryBuilder\Builder\GenericBuilder;
 
 $builder = new GenericBuilder(); 
 
@@ -485,8 +485,8 @@ WHERE
 #### Usage:
 ```php
 <?php
-use NilPortugues\Sql\QueryBuilder\Syntax\OrderBy;
-use NilPortugues\Sql\QueryBuilder\Builder\GenericBuilder;
+use Krinkle\Sql\QueryBuilder\Syntax\OrderBy;
+use Krinkle\Sql\QueryBuilder\Builder\GenericBuilder;
 
 $builder = new GenericBuilder(); 
 
@@ -536,7 +536,7 @@ Examples provided below.
 #### Usage:
 ```php
 <?php
-use NilPortugues\Sql\QueryBuilder\Builder\GenericBuilder;
+use Krinkle\Sql\QueryBuilder\Builder\GenericBuilder;
 
 $builder = new GenericBuilder(); 
 
@@ -557,7 +557,7 @@ Important including the the `where` statement is critical, or all table rows wil
 #### Usage:
 ```php
 <?php
-use NilPortugues\Sql\QueryBuilder\Builder\GenericBuilder;
+use Krinkle\Sql\QueryBuilder\Builder\GenericBuilder;
 
 $builder = new GenericBuilder(); 
 
@@ -588,8 +588,8 @@ DELETE FROM user WHERE (user.user_id = :v1) LIMIT :v2
 #### Usage:
 ```php
 <?php
-use NilPortugues\Sql\QueryBuilder\Syntax\OrderBy;
-use NilPortugues\Sql\QueryBuilder\Builder\GenericBuilder;
+use Krinkle\Sql\QueryBuilder\Syntax\OrderBy;
+use Krinkle\Sql\QueryBuilder\Builder\GenericBuilder;
 
 $builder = new GenericBuilder(); 
 
@@ -639,7 +639,7 @@ The `INTERSECT` statement is really straightforward.
 #### Usage:
 ```php
 <?php
-use NilPortugues\Sql\QueryBuilder\Builder\GenericBuilder;
+use Krinkle\Sql\QueryBuilder\Builder\GenericBuilder;
 
 $builder = new GenericBuilder(); 
 
@@ -679,7 +679,7 @@ The `MINUS` statement is really straightforward.
 #### Usage:
 ```php
 <?php
-use NilPortugues\Sql\QueryBuilder\Builder\GenericBuilder;
+use Krinkle\Sql\QueryBuilder\Builder\GenericBuilder;
 
 $builder = new GenericBuilder(); 
 
@@ -711,7 +711,7 @@ The `UNION` statement is really straightforward.
 #### Usage:
 ```php
 <?php
-use NilPortugues\Sql\QueryBuilder\Builder\GenericBuilder;
+use Krinkle\Sql\QueryBuilder\Builder\GenericBuilder;
 
 $builder = new GenericBuilder(); 
 
@@ -744,7 +744,7 @@ The `UNION ALL` statement is really straightforward.
 #### Usage:
 ```php
 <?php
-use NilPortugues\Sql\QueryBuilder\Builder\GenericBuilder;
+use Krinkle\Sql\QueryBuilder\Builder\GenericBuilder;
 
 $builder = new GenericBuilder(); 
 
@@ -808,7 +808,7 @@ public function asLiteral($literal);
 #### Usage:
 ```php
 <?php
-use NilPortugues\Sql\QueryBuilder\Builder\GenericBuilder;
+use Krinkle\Sql\QueryBuilder\Builder\GenericBuilder;
 
 $builder = new GenericBuilder(); 
 
@@ -835,7 +835,7 @@ Default logical operator for joining more than one `HAVING` condition is `AND`.
 #### Usage:
 ```php
 <?php
-use NilPortugues\Sql\QueryBuilder\Builder\GenericBuilder;
+use Krinkle\Sql\QueryBuilder\Builder\GenericBuilder;
 
 $builder = new GenericBuilder(); 
 
@@ -883,7 +883,7 @@ Same operators used in the WHERE statement are available for HAVING operations.
 #### Usage:
 ```php
 <?php
-use NilPortugues\Sql\QueryBuilder\Builder\GenericBuilder;
+use Krinkle\Sql\QueryBuilder\Builder\GenericBuilder;
 
 $builder = new GenericBuilder(); 
 
@@ -927,7 +927,7 @@ Sometimes, a column needs to be set as a column. SQL Query Builder got you cover
 #### Usage:
 ```php
 <?php
-use NilPortugues\Sql\QueryBuilder\Builder\GenericBuilder;
+use Krinkle\Sql\QueryBuilder\Builder\GenericBuilder;
 
 $builder = new GenericBuilder(); 
 
@@ -987,7 +987,7 @@ There are time where you need to force the same column structure (eg: UNIONs) ev
 #### Usage:
 ```php
 <?php
-use NilPortugues\Sql\QueryBuilder\Builder\GenericBuilder;
+use Krinkle\Sql\QueryBuilder\Builder\GenericBuilder;
 
 $builder = new GenericBuilder(); 
 
@@ -1022,7 +1022,7 @@ Example for MAX function.
 #### Usage:
 ```php
 <?php
-use NilPortugues\Sql\QueryBuilder\Builder\GenericBuilder;
+use Krinkle\Sql\QueryBuilder\Builder\GenericBuilder;
 
 $builder = new GenericBuilder(); 
 
@@ -1055,7 +1055,7 @@ Example for CURRENT_TIMESTAMP function.
 #### Usage:
 ```php
 <?php
-use NilPortugues\Sql\QueryBuilder\Builder\GenericBuilder;
+use Krinkle\Sql\QueryBuilder\Builder\GenericBuilder;
 
 $builder = new GenericBuilder(); 
 
@@ -1095,7 +1095,7 @@ Some useful use cases examples can be :
 #### Usage:
 ```php
 <?php
-use NilPortugues\Sql\QueryBuilder\Builder\GenericBuilder;
+use Krinkle\Sql\QueryBuilder\Builder\GenericBuilder;
 
 $builder = new GenericBuilder(); 
 

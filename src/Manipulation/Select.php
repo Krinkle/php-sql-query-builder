@@ -8,12 +8,12 @@
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues\Sql\QueryBuilder\Manipulation;
+namespace Krinkle\Sql\QueryBuilder\Manipulation;
 
-use NilPortugues\Sql\QueryBuilder\Syntax\SyntaxFactory;
-use NilPortugues\Sql\QueryBuilder\Syntax\Table;
-use NilPortugues\Sql\QueryBuilder\Syntax\Where;
-use NilPortugues\Sql\QueryBuilder\Syntax\OrderBy;
+use Krinkle\Sql\QueryBuilder\Syntax\SyntaxFactory;
+use Krinkle\Sql\QueryBuilder\Syntax\Table;
+use Krinkle\Sql\QueryBuilder\Syntax\Where;
+use Krinkle\Sql\QueryBuilder\Syntax\OrderBy;
 
 /**
  * Class Select.
@@ -237,7 +237,7 @@ class Select extends AbstractBaseQuery
     }
 
     /**
-     * @return \NilPortugues\Sql\QueryBuilder\Syntax\Column
+     * @return \Krinkle\Sql\QueryBuilder\Syntax\Column
      *
      * @throws QueryException
      */

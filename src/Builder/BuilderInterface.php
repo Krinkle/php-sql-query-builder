@@ -8,9 +8,9 @@
  * file that was distributed with this source code.
  */
 
-namespace NilPortugues\Sql\QueryBuilder\Builder;
+namespace Krinkle\Sql\QueryBuilder\Builder;
 
-use NilPortugues\Sql\QueryBuilder\Manipulation\QueryInterface;
+use Krinkle\Sql\QueryBuilder\Manipulation\QueryInterface;
 
 /**
  * Interface BuilderInterface.
