@@ -12,6 +12,7 @@ namespace Krinkle\Tests\Sql\QueryBuilder\Builder\Syntax;
 
 use Krinkle\Sql\QueryBuilder\Syntax\Column;
 use Krinkle\Sql\QueryBuilder\Syntax\OrderBy;
+use Krinkle\Sql\QueryBuilder\Syntax\Table;
 use Krinkle\Sql\QueryBuilder\Manipulation\Select;
 use Krinkle\Sql\QueryBuilder\Builder\GenericBuilder;
 
@@ -64,6 +65,18 @@ class SelectWriterTest extends \PHPUnit_Framework_TestCase
         $this->query = new Select('user');
 
         $expected = 'SELECT user.* FROM user';
+
+        $this->assertSame($expected, $this->writer->write($this->query));
+    }
+
+    /**
+     * @test
+     */
+    public function itShouldBeConstructedWithConstructorWithTable()
+    {
+        $this->query = new Select(new Table('user', 'example_db'));
+
+        $expected = 'SELECT example_db.user.* FROM example_db.user';
 
         $this->assertSame($expected, $this->writer->write($this->query));
     }
@@ -603,6 +616,27 @@ SQL;
 
         $expected = array(':v1' => 1, ':v2' => 2);
         $this->assertEquals($expected, $this->writer->getValues());
+    }
+
+    /**
+     * @test
+     */
+    public function itShouldAllowSelectQueryWithTableAsColumn()
+    {
+        $tableA1 = new Select(new Table('Table1', 'StoreA'));
+        $tableA1
+            ->where()
+            ->equals('table1_id', 1);
+
+        $tableB1 = new Select(new Table('Table1', 'StoreB'));
+        $tableB1
+            ->where()
+            ->eq($tableA1, 2);
+
+        $expected = 'SELECT StoreB.Table1.* FROM StoreB.Table1 WHERE ((SELECT StoreA.Table1.* FROM StoreA.Table1 '.
+            'WHERE (StoreA.Table1.table1_id = :v1)) = :v2)';
+
+        $this->assertSame($expected, $this->writer->write($tableB1));
     }
 
     /**

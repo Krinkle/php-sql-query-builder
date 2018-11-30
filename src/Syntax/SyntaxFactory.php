@@ -48,7 +48,7 @@ final class SyntaxFactory
      * Creates a Column object.
      *
      * @param array      $argument
-     * @param null|Table $table
+     * @param Table|null $table
      *
      * @return Column
      */
@@ -64,28 +64,34 @@ final class SyntaxFactory
             $columnAlias = null;
         }
 
-        return new Column($columnName, (string) $table, $columnAlias);
+        return new Column($columnName, $table, $columnAlias);
     }
 
     /**
      * Creates a Table object.
      *
-     * @param string[] $table
+     * @param string|string[]|Table $table
      *
      * @return Table
      */
     public static function createTable($table)
     {
-        $tableName = $table;
-        if (\is_array($table)) {
-            $tableName = \current($table);
-            $tableAlias = \key($table);
-        }
+        if ($table instanceof Table) {
+            $newTable = clone $table;
+        } else {
+            if (\is_array($table)) {
+                $tableName = \current($table);
+                $tableAlias = \key($table);
+            } else {
+                $tableName = $table;
+                $tableAlias = null;
+            }
 
-        $newTable = new Table($tableName);
+            $newTable = new Table($tableName);
 
-        if (isset($tableAlias) && !is_numeric($tableAlias)) {
-            $newTable->setAlias($tableAlias);
+            if ($tableAlias !== null && !\is_numeric($tableAlias)) {
+                $newTable->setAlias($tableAlias);
+            }
         }
 
         return $newTable;

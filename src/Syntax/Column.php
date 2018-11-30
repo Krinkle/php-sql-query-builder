@@ -36,7 +36,7 @@ class Column implements QueryPartInterface
 
     /**
      * @param string $name
-     * @param string $table
+     * @param string|Table $table
      * @param string $alias
      */
     public function __construct($name, $table, $alias = '')
@@ -83,14 +83,13 @@ class Column implements QueryPartInterface
     }
 
     /**
-     * @param string $table
+     * @param string|Table $table
      *
      * @return $this
      */
     public function setTable($table)
     {
-        $newTable = array($table);
-        $this->table = SyntaxFactory::createTable($newTable);
+        $this->table = SyntaxFactory::createTable($table);
 
         return $this;
     }
